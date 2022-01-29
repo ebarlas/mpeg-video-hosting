@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Play Song</title>
+</head>
+<body>
+<script src="jsmpeg.min.js"></script>
+<script type="text/javascript">
+    const params = new URLSearchParams(document.location.search);
+    const song = params.get('song');
+    document.write(`<div class="jsmpeg" data-url="${song}.ts"></div>`);
+</script>
+</body>
+</html>
