@@ -6,11 +6,10 @@
     <title>Play Song</title>
 </head>
 <body>
-<script src="jsmpeg.min.js"></script>
 <script type="text/javascript">
     const params = new URLSearchParams(document.location.search);
     const song = params.get('song');
-    document.write(`<div class="jsmpeg" data-url="${song}.ts"></div>`);
+    document.write(`<video controls><source src="${song}.mp4" type="video/mp4"></video>`);
 </script>
 </body>
 </html>
